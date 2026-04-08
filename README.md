@@ -11,8 +11,8 @@
 | **26.05 (Seul → Okinawa)** | 🏨 Hotel (**Check-Out**) → 🚕 Transport → 🛫 Lotnisko ICN (**11:15**) → ✈️ Lot **7C1801** (**Odlot 13:15**) → 🛬 Lotnisko OKA (**Lądowanie 15:45**) → 🚕 Transport → 🏨 Hotel Resol Trinity Naha → 🕓 Czas wolny |
 | **27.05 (Okinawa)** | 🚗 Brak planu (**Mamy samochód**) |
 | **28.05 (Okinawa)** | 🚗 Brak planu (**Mamy samochód**) |
-| **29.05 (Okinawa)** | 🤿 Snorkeling (**Sebastian, Iwona**) / 🕓 Inna atrakcja (**Agnieszka, Tomek**) / 🚗 Mamy samochód |
-| **30.05 (Okinawa)** | 🏝️ Wycieczka na inną wyspę (**Propozycja**) |
+| **29.05 (Okinawa)** | 🚗 Brak planu (**Mamy samochód**) |
+| **30.05 (Okinawa)** | 🤿 Snorkeling (**Sebastian, Iwona**) / 🕓 Inna atrakcja (**Agnieszka, Tomek**) / 🚗 Mamy samochód |
 | **31.05 (Okinawa → Tokio → Kamakura)** | 🏨 Hotel (**Check-Out**) → 🚕 Transport → 🛫 Lotnisko OKA (**10:05**) → ✈️ Lot **NH464** (**Odlot 12:05**) → 🛬 Lotnisko HND (**Lądowanie 14:30**) → 🚕 Transport → 🏨 JR-East Hotel Mets Kamakura Ofuna → 🕓 Czas wolny |
 | **01.06 (Kamakura)** | 🕓 Brak planu |
 | **02.06 (Kamakura → Hakone)** | 🏨 Hotel (**Check-Out 11:00**) → 🚕 Transport → 🏨 Hotel Okada → 🕓 Czas wolny |
