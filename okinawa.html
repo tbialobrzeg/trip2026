@@ -14,6 +14,8 @@
       --link: #1d4ed8;
       --link-hover: #1e40af;
       --header: #eef6ff;
+      --tag-bg: #edf2f7;
+      --tag-text: #2d3748;
     }
 
     body {
@@ -25,7 +27,7 @@
     }
 
     main {
-      max-width: 1180px;
+      max-width: 1280px;
       margin: 0 auto;
       padding: 32px 18px 56px;
     }
@@ -67,7 +69,7 @@
     table {
       width: 100%;
       border-collapse: collapse;
-      min-width: 760px;
+      min-width: 980px;
     }
 
     th, td {
@@ -87,16 +89,20 @@
       border-bottom: 0;
     }
 
-    td:first-child {
+    td.place {
       width: 330px;
       font-weight: 650;
     }
 
-    .rating {
+    td.rating {
       width: 86px;
       white-space: nowrap;
       font-weight: 800;
       text-align: right;
+    }
+
+    td.type {
+      width: 190px;
     }
 
     a {
@@ -115,6 +121,18 @@
       font-size: 0.92rem;
       font-weight: 500;
       color: var(--muted);
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 3px 8px;
+      margin: 2px 4px 2px 0;
+      border-radius: 999px;
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      font-size: 0.82rem;
+      font-weight: 650;
+      white-space: nowrap;
     }
 
     footer {
@@ -141,287 +159,338 @@
         <thead>
           <tr>
             <th>Miejsce</th>
+            <th>Typ</th>
             <th>Ocena</th>
             <th>Co to jest</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>
+            <td class="place">
               <a href="https://churaumi.okinawa/en/" target="_blank" rel="noopener noreferrer">Okinawa Churaumi Aquarium</a><br>
               <span class="pl-link">↳ <a href="https://divers24.pl/1111-churaumi-aquarium-najpiekniejsze-oceanarium-swiata/" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
+            <td class="type"><span class="tag">akwarium</span><span class="tag">natura</span><span class="tag">technika</span></td>
             <td class="rating">5/5</td>
             <td>Najsłynniejsze akwarium Okinawy z ogromnym zbiornikiem i rekinami wielorybimi.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://oki-park.jp/kaiyohaku/en/" target="_blank" rel="noopener noreferrer">Ocean Expo Park</a><br>
               <span class="pl-link">↳ <a href="https://okinawa-labo.com/pl/Park-Kaiyohaku-na-Okinawie-5474" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
+            <td class="type"><span class="tag">park</span><span class="tag">natura</span><span class="tag">spacer</span></td>
             <td class="rating">4.5/5</td>
             <td>Duży park nad oceanem wokół akwarium, dobry na spacer i dodatkowe atrakcje.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://visitokinawajapan.com/destinations/okinawa-main-island/northern-okinawa-main-island/kouri-island/" target="_blank" rel="noopener noreferrer">Kouri Bridge / Kouri Island</a><br>
               <span class="pl-link">↳ <a href="https://bylismytam.pl/okinawa/" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
+            <td class="type"><span class="tag">widoki</span><span class="tag">plaża</span><span class="tag">drive</span></td>
             <td class="rating">5/5</td>
             <td><strong>Wyspa z dojazdem autem przez most</strong>; malowniczy przejazd przez turkusową wodę i plaże.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://www.japan.travel/en/spot/586/" target="_blank" rel="noopener noreferrer">Kouri Beach</a><br>
               <span class="pl-link">↳ <a href="https://okinawa-labo.com/pl/Pla%C5%BCa-Kourijima-139" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
+            <td class="type"><span class="tag">plaża</span><span class="tag">relaks</span></td>
             <td class="rating">3/5</td>
             <td>Plaża na <strong>wyspie Kouri, dostępnej autem przez most</strong>, dobra na krótki postój.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://www.japan.travel/en/spot/586/" target="_blank" rel="noopener noreferrer">Heart Rocks / Tinu Beach</a><br>
               <span class="pl-link">↳ <a href="https://okinawa-labo.com/pl/Pla%C5%BCa-Kourijima-139" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
+            <td class="type"><span class="tag">plaża</span><span class="tag">foto</span><span class="tag">widoki</span></td>
             <td class="rating">3/5</td>
             <td>Popularny punkt zdjęciowy na <strong>wyspie Kouri, dostępnej autem przez most</strong>, z charakterystycznymi skałami.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://visitokinawajapan.com/discover/world-heritage-top/nakijin-castle-ruins/" target="_blank" rel="noopener noreferrer">Nakijin Castle Ruins</a><br>
               <span class="pl-link">↳ <a href="https://okinawa-labo.com/pl/wycieczka/poleci%C4%87" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
+            <td class="type"><span class="tag">historia</span><span class="tag">UNESCO</span><span class="tag">ruiny</span></td>
             <td class="rating">4/5</td>
             <td>Ruiny zamku Ryukyu wpisane na UNESCO, dobre do połączenia z trasą Churaumi / Kouri / Bise.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://www.ana.co.jp/en/eur/japan-travel-planner/okinawa/0000008.html" target="_blank" rel="noopener noreferrer">Cape Manzamo</a><br>
               <span class="pl-link">↳ <a href="https://bylismytam.pl/okinawa/" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
+            <td class="type"><span class="tag">widoki</span><span class="tag">natura</span><span class="tag">klif</span></td>
             <td class="rating">4.5/5</td>
             <td>Słynny klif widokowy ze skałą przypominającą trąbę słonia.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://www.oki-islandguide.com/attractions/fukugi-tree-lined-streets-in-bise" target="_blank" rel="noopener noreferrer">Bise Fukugi Tree Road</a>
             </td>
+            <td class="type"><span class="tag">spacer</span><span class="tag">natura</span><span class="tag">klimat</span></td>
             <td class="rating">4/5</td>
             <td>Spokojna alejka wśród starych drzew fukugi, blisko akwarium.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://www.gltjp.com/en/directory/item/16625/" target="_blank" rel="noopener noreferrer">Cape Zanpa</a>
             </td>
+            <td class="type"><span class="tag">widoki</span><span class="tag">klif</span><span class="tag">latarnia</span></td>
             <td class="rating">4/5</td>
             <td>Klify, latarnia morska i widoki na zachodnie wybrzeże.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://www.maedamisaki.jp/en" target="_blank" rel="noopener noreferrer">Cape Maeda</a><br>
               <span class="pl-link">↳ <a href="https://bylismytam.pl/okinawa/" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
+            <td class="type"><span class="tag">snorkeling</span><span class="tag">nurkowanie</span><span class="tag">morze</span></td>
             <td class="rating">4/5</td>
             <td>Popularne miejsce snorkelingowe i nurkowe.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://www.japan.travel/en/spot/592/" target="_blank" rel="noopener noreferrer">Blue Cave</a><br>
               <span class="pl-link">↳ <a href="https://okinawa-labo.com/pl/Okinawa-Blue-House-3808" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
+            <td class="type"><span class="tag">snorkeling</span><span class="tag">nurkowanie</span><span class="tag">jaskinia</span></td>
             <td class="rating">4.5/5</td>
             <td>Morska jaskinia znana z niebieskiego światła, najlepsza przy snorkelingu lub nurkowaniu.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://www.okinawa-americanvillage.com/" target="_blank" rel="noopener noreferrer">Mihama American Village</a><br>
               <span class="pl-link">↳ <a href="https://bylismytam.pl/okinawa/" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
+            <td class="type"><span class="tag">miasto</span><span class="tag">jedzenie</span><span class="tag">wieczór</span></td>
             <td class="rating">4/5</td>
             <td>Kolorowa dzielnica z restauracjami, sklepami i wieczornym klimatem.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://visitokinawajapan.com/discover/world-heritage-top/zakimi-castle-ruins/" target="_blank" rel="noopener noreferrer">Zakimi Castle Ruins</a>
             </td>
+            <td class="type"><span class="tag">historia</span><span class="tag">UNESCO</span><span class="tag">ruiny</span></td>
             <td class="rating">3.5/5</td>
             <td>Ruiny dawnego zamku Ryukyu, dobry krótki przystanek po drodze.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://visitokinawajapan.com/discover/world-heritage-top/katsuren-castle-ruins/" target="_blank" rel="noopener noreferrer">Katsuren Castle Ruins</a><br>
               <span class="pl-link">↳ <a href="https://okinawa-labo.com/pl/Katsuren-Catsle-Ruins-6327" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
+            <td class="type"><span class="tag">historia</span><span class="tag">UNESCO</span><span class="tag">ruiny</span></td>
             <td class="rating">4/5</td>
             <td>Ruiny zamku Ryukyu na wschodzie wyspy, dobre do połączenia z Kaichu Road i wyspami Uruma.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://visitokinawajapan.com/discover/world-heritage-top/sefa-utaki/" target="_blank" rel="noopener noreferrer">Sefa Utaki</a><br>
               <span class="pl-link">↳ <a href="https://wszystkiegojaponskiego.pl/2017/07/06/sefa-utaki-najswietsze-miejsce-okinawy/" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
+            <td class="type"><span class="tag">historia</span><span class="tag">duchowe</span><span class="tag">UNESCO</span></td>
             <td class="rating">4/5</td>
             <td>Święte miejsce dawnego Królestwa Ryukyu, bardziej kultura i historia niż typowa atrakcja widokowa.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://www.oki-islandguide.com/attractions/cape-chinen-park" target="_blank" rel="noopener noreferrer">Cape Chinen Park</a><br>
               <span class="pl-link">↳ <a href="https://www.getyourguide.com/pl-pl/naha-l147347/okinawa-south-island-tour-do-zamku-shurijo-i-okinawa-world-t385747/" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
+            <td class="type"><span class="tag">widoki</span><span class="tag">natura</span><span class="tag">spacer</span></td>
             <td class="rating">4/5</td>
             <td>Punkt widokowy na południowo-wschodnim wybrzeżu Okinawy.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://okinawahai.com/nirai-kanai-bridge/" target="_blank" rel="noopener noreferrer">Nirai Kanai Bridge</a><br>
               <span class="pl-link">↳ <a href="https://okinawa-labo.com/pl/Okinawa-Drive-3202" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
+            <td class="type"><span class="tag">drive</span><span class="tag">widoki</span><span class="tag">infrastruktura</span></td>
             <td class="rating">4/5</td>
             <td>Widokowy most i trasa samochodowa na południu, dobry do połączenia z Sefa Utaki i Cape Chinen.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://www.gltjp.com/en/directory/item/16287/" target="_blank" rel="noopener noreferrer">Kaichu Road</a><br>
               <span class="pl-link">↳ <a href="https://okinawa-labo.com/pl/Mid-Sea-Road-Drivespot-47645" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
+            <td class="type"><span class="tag">drive</span><span class="tag">widoki</span><span class="tag">infrastruktura</span></td>
             <td class="rating">4.5/5</td>
             <td>Droga nad morzem prowadząca autem w stronę wysp Henza, Miyagi, Hamahiga i Ikei.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://visitokinawajapan.com/destinations/okinawa-main-island/central-okinawa-main-island/hamahiga-island/" target="_blank" rel="noopener noreferrer">Hamahiga Island</a><br>
               <span class="pl-link">↳ <a href="https://okinawa-labo.com/pl/jednodniowa-wycieczka-p%C5%82ywanie-na-pla%C5%BCy-na-odosobnionej-wyspie-30716" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
+            <td class="type"><span class="tag">wyspa autem</span><span class="tag">plaża</span><span class="tag">lokalnie</span></td>
             <td class="rating">4/5</td>
             <td><strong>Wyspa z dojazdem autem przez most</strong>, spokojniejsza i bardziej lokalna, dobra na plaże oraz trasę wschodnią.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://visitokinawajapan.com/destinations/okinawa-main-island/central-okinawa-main-island/ikei-island/" target="_blank" rel="noopener noreferrer">Ikei Island / Ikei Beach / Odomari Beach</a><br>
               <span class="pl-link">↳ <a href="https://okinawa-labo.com/pl/wyspa-ikei-9267" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
+            <td class="type"><span class="tag">wyspa autem</span><span class="tag">plaża</span><span class="tag">relaks</span></td>
             <td class="rating">4/5</td>
             <td><strong>Wyspa z dojazdem autem przez mosty</strong>, znana z plaż i spokojniejszego klimatu niż popularne punkty zachodniego wybrzeża.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://visitokinawajapan.com/destinations/okinawa-main-island/northern-okinawa-main-island/sesoko-island/" target="_blank" rel="noopener noreferrer">Sesoko Island / Sesoko Beach</a><br>
               <span class="pl-link">↳ <a href="https://okinawa-labo.com/pl/jednodniowa-wycieczka-p%C5%82ywanie-na-pla%C5%BCy-na-odosobnionej-wyspie-30716" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
+            <td class="type"><span class="tag">wyspa autem</span><span class="tag">plaża</span><span class="tag">widoki</span></td>
             <td class="rating">4.5/5</td>
             <td><strong>Wyspa z dojazdem autem przez most</strong>, niedaleko Motobu i Churaumi, znana z ładnej plaży i czystej wody.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://www.gyokusendo.co.jp.e.aqs.hp.transer.com/okinawaworld/" target="_blank" rel="noopener noreferrer">Okinawa World / Gyokusendo Cave</a><br>
               <span class="pl-link">↳ <a href="https://www.klook.com/pl/destination/p50122698-gyokusendo-cave/" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
+            <td class="type"><span class="tag">jaskinia</span><span class="tag">kultura</span><span class="tag">park</span></td>
             <td class="rating">4.5/5</td>
             <td>Turystyczny park kultury Okinawy z dużą jaskinią wapienną.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://www.ryukyumura.co.jp/official/en/" target="_blank" rel="noopener noreferrer">Ryukyu Mura</a><br>
               <span class="pl-link">↳ <a href="https://okinawa-labo.com/pl/ryuukyuumura-21988" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
+            <td class="type"><span class="tag">kultura</span><span class="tag">skansen</span><span class="tag">rzemiosło</span></td>
             <td class="rating">4/5</td>
             <td>Skansen i park kultury Ryukyu z tradycyjnymi domami, pokazami i rzemiosłem.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
+              <a href="https://happypark.orionbeer.co.jp/" target="_blank" rel="noopener noreferrer">Orion Happy Park / Orion Beer Factory, Nago</a>
+            </td>
+            <td class="type"><span class="tag">technika</span><span class="tag">fabryka</span><span class="tag">produkcja</span></td>
+            <td class="rating">4/5</td>
+            <td>Zwiedzanie browaru Orion w Nago: proces produkcji piwa, linia technologiczna, zbiorniki i degustacja.</td>
+          </tr>
+
+          <tr>
+            <td class="place">
+              <a href="https://www.piratsuka.com/en/venue/1909" target="_blank" rel="noopener noreferrer">Okiden Science Museum / Gushikawa Thermal Power Station</a>
+            </td>
+            <td class="type"><span class="tag">technika</span><span class="tag">energetyka</span><span class="tag">muzeum</span></td>
+            <td class="rating">3.5/5</td>
+            <td>Niszowe muzeum nauki przy elektrowni cieplnej w Uruma, ciekawe głównie dla osób lubiących energetykę i technikę.</td>
+          </tr>
+
+          <tr>
+            <td class="place">
               <a href="https://www.oki-islandguide.com/attractions/okinawa-peace-prayer-park-and-memorial-hall-2" target="_blank" rel="noopener noreferrer">Peace Memorial Park</a>
             </td>
+            <td class="type"><span class="tag">historia</span><span class="tag">wojna</span><span class="tag">muzeum</span></td>
             <td class="rating">3.5/5</td>
             <td>Park pamięci poświęcony bitwie o Okinawę i ofiarom wojny.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://www.himeyuri.or.jp/en/" target="_blank" rel="noopener noreferrer">Himeyuri Peace Museum</a>
             </td>
+            <td class="type"><span class="tag">historia</span><span class="tag">wojna</span><span class="tag">muzeum</span></td>
             <td class="rating">3.5/5</td>
             <td>Poruszające muzeum związane z historią uczennic Himeyuri podczas wojny.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://oki-park.jp/shurijo/en/" target="_blank" rel="noopener noreferrer">Shurijo Castle Park</a><br>
               <span class="pl-link">↳ <a href="https://btth.pl/okinawa-zamek-shuri-shurijo/" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
+            <td class="type"><span class="tag">historia</span><span class="tag">architektura</span><span class="tag">zamek</span></td>
             <td class="rating">3.5/5</td>
             <td>Historyczny teren zamku Shuri, dawnej siedziby władców Ryukyu.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://naha-kokusaidori.okinawa/en" target="_blank" rel="noopener noreferrer">Kokusai-dori</a><br>
               <span class="pl-link">↳ <a href="https://bylismytam.pl/okinawa/" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
+            <td class="type"><span class="tag">miasto</span><span class="tag">jedzenie</span><span class="tag">zakupy</span></td>
             <td class="rating">3.5/5</td>
             <td>Główna ulica handlowo-spacerowa w Naha, dobra raczej wieczorem bez auta.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://visitokinawajapan.com/travel-inspiration/visiting-tsuboya-yachimun-street/" target="_blank" rel="noopener noreferrer">Tsuboya Yachimun Street</a>
             </td>
+            <td class="type"><span class="tag">rzemiosło</span><span class="tag">ceramika</span><span class="tag">spacer</span></td>
             <td class="rating">3/5</td>
             <td>Ulica ceramiki w Naha z warsztatami, sklepami i spokojnym klimatem.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://visitokinawajapan.com/destinations/okinawa-main-island/southern-okinawa-main-island/senaga-island/" target="_blank" rel="noopener noreferrer">Senaga Island / Umikaji Terrace</a><br>
               <span class="pl-link">↳ <a href="https://www.getyourguide.com/pl-pl/naha-l147347/okinawa-south-island-tour-do-zamku-shurijo-i-okinawa-world-t385747/" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
+            <td class="type"><span class="tag">wyspa autem</span><span class="tag">jedzenie</span><span class="tag">lotnictwo</span></td>
             <td class="rating">3.5/5</td>
-            <td><strong>Mała wyspa z dojazdem autem przez most/groblę</strong>, blisko Naha, dobra na jedzenie i zachód słońca.</td>
+            <td><strong>Mała wyspa z dojazdem autem przez most/groblę</strong>, blisko Naha, dobra na jedzenie, zachód słońca i obserwację samolotów.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://www.env.go.jp/en/nature/nps/park/yambaru/index.html" target="_blank" rel="noopener noreferrer">Yambaru National Park</a>
             </td>
+            <td class="type"><span class="tag">natura</span><span class="tag">las</span><span class="tag">trekking</span></td>
             <td class="rating">3.5/5</td>
             <td>Dziki, zielony północny region Okinawy z lasami i naturą.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://www.japan.travel/en/spot/588/" target="_blank" rel="noopener noreferrer">Hiji Waterfall</a>
             </td>
+            <td class="type"><span class="tag">natura</span><span class="tag">wodospad</span><span class="tag">trekking</span></td>
             <td class="rating">3.5/5</td>
             <td>Wodospad w północnej części wyspy, dostępny po pieszym szlaku.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://www.oki-islandguide.com/attractions/cape-hedo" target="_blank" rel="noopener noreferrer">Cape Hedo</a><br>
               <span class="pl-link">↳ <a href="https://bylismytam.pl/okinawa/" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
+            <td class="type"><span class="tag">widoki</span><span class="tag">klif</span><span class="tag">daleko</span></td>
             <td class="rating">3/5</td>
             <td>Najbardziej północny punkt głównej wyspy Okinawy, ale bardzo daleko z Naha.</td>
           </tr>
@@ -436,64 +505,72 @@
         <thead>
           <tr>
             <th>Miejsce</th>
+            <th>Typ</th>
             <th>Ocena</th>
             <th>Co to jest</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>
+            <td class="place">
               <a href="https://visitokinawajapan.com/destinations/kerama-islands/zamami-island/" target="_blank" rel="noopener noreferrer">Zamami Island</a>
             </td>
+            <td class="type"><span class="tag">wyspa</span><span class="tag">plaża</span><span class="tag">snorkeling</span></td>
             <td class="rating">5/5</td>
             <td>Jedna z najładniejszych wysp Kerama, dobra na plaże, snorkeling i spokojny klimat.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://visitokinawajapan.com/destinations/kerama-islands/tokashiki-island/" target="_blank" rel="noopener noreferrer">Tokashiki Island</a><br>
               <span class="pl-link">↳ <a href="https://okinawa-labo.com/pl/miejsce-zwiedzania-wyspy-Tokashiki-28431" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
+            <td class="type"><span class="tag">wyspa</span><span class="tag">plaża</span><span class="tag">snorkeling</span></td>
             <td class="rating">5/5</td>
             <td>Bardzo dobry kandydat na jednodniowy wypad promem z Naha.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://visitokinawajapan.com/destinations/kerama-islands/aka-island/" target="_blank" rel="noopener noreferrer">Aka Island</a>
             </td>
+            <td class="type"><span class="tag">wyspa</span><span class="tag">plaża</span><span class="tag">snorkeling</span></td>
             <td class="rating">4.5/5</td>
             <td>Mniejsza i spokojniejsza wyspa Kerama z piękną wodą i snorkelingiem.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://visitokinawajapan.com/destinations/okinawa-main-island/northern-okinawa-main-island/minna-island-okinawa-main-island/" target="_blank" rel="noopener noreferrer">Minna Island</a>
             </td>
+            <td class="type"><span class="tag">wyspa</span><span class="tag">plaża</span><span class="tag">relaks</span></td>
             <td class="rating">4.5/5</td>
             <td>Mała wyspa przy północnej Okinawie, znana z czystej wody i plaż.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://visitokinawajapan.com/destinations/okinawa-main-island/northern-okinawa-main-island/ie-island/" target="_blank" rel="noopener noreferrer">Ie Island</a>
             </td>
+            <td class="type"><span class="tag">wyspa</span><span class="tag">drive</span><span class="tag">widoki</span></td>
             <td class="rating">4/5</td>
             <td>Wyspa 30 minut promem z Motobu, dobra na spokojny objazd i widoki.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://visitokinawajapan.com/destinations/kerama-islands/geruma-island/" target="_blank" rel="noopener noreferrer">Geruma Island</a>
             </td>
+            <td class="type"><span class="tag">wyspa</span><span class="tag">spokój</span><span class="tag">lokalnie</span></td>
             <td class="rating">3.5/5</td>
             <td>Bardzo spokojna wyspa połączona mostem z Aka, raczej jako dodatek do Aka.</td>
           </tr>
 
           <tr>
-            <td>
+            <td class="place">
               <a href="https://visitokinawajapan.com/destinations/kume-island/" target="_blank" rel="noopener noreferrer">Kume Island</a>
             </td>
+            <td class="type"><span class="tag">wyspa</span><span class="tag">plaża</span><span class="tag">osobny wyjazd</span></td>
             <td class="rating">4/5</td>
             <td>Piękna większa wyspa, ale logistycznie bardziej na osobny wyjazd niż krótki wypad.</td>
           </tr>
