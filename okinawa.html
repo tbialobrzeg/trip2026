@@ -22,6 +22,8 @@
       --region-text: #075985;
       --ferry-bg: #fef3c7;
       --ferry-text: #92400e;
+      --booking-bg: #fee2e2;
+      --booking-text: #991b1b;
     }
 
     body {
@@ -108,7 +110,7 @@
     }
 
     td.type {
-      width: 275px;
+      width: 300px;
     }
 
     a {
@@ -156,6 +158,11 @@
       color: var(--ferry-text);
     }
 
+    .tag.booking {
+      background: var(--booking-bg);
+      color: var(--booking-text);
+    }
+
     footer {
       margin-top: 28px;
       color: var(--muted);
@@ -170,7 +177,9 @@
 
     <div class="note">
       Link w nazwie miejsca prowadzi do głównego opisu lub strony atrakcji. Link „opis pl” prowadzi do polskiego opisu, jeśli był sensowny do dodania.
-      Tag „must-have” oznacza punkty szczególnie warte rozważenia przy krótkim pobycie. Tag „prom” oznacza miejsca wymagające przeprawy promem lub łodzią.
+      Tag „must-have” oznacza punkty szczególnie warte rozważenia przy krótkim pobycie.
+      Tag „prom” oznacza miejsca wymagające przeprawy promem lub łodzią.
+      Tag „rezerwacja” oznacza miejsca, gdzie warto lub trzeba wcześniej sprawdzić dostępność, bilety, tour albo rozkład.
     </div>
 
     <h2>Okinawa autem — bez promu</h2>
@@ -257,6 +266,7 @@
               <span class="pl-link">↳ <a href="https://okinawa-labo.com/pl/Okinawa-Blue-House-3808" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
             <td class="type">
+              <span class="tag booking">rezerwacja</span>
               <span class="tag region">zachodnie wybrzeże</span>
               <span class="tag">snorkeling</span>
               <span class="tag">nurkowanie</span>
@@ -362,6 +372,7 @@
               <span class="pl-link">↳ <a href="https://bylismytam.pl/okinawa/" target="_blank" rel="noopener noreferrer">opis pl</a></span>
             </td>
             <td class="type">
+              <span class="tag booking">rezerwacja</span>
               <span class="tag region">zachodnie wybrzeże</span>
               <span class="tag">snorkeling</span>
               <span class="tag">nurkowanie</span>
@@ -497,13 +508,14 @@
               <a href="https://happypark.orionbeer.co.jp/" target="_blank" rel="noopener noreferrer">Orion Happy Park / Orion Beer Factory, Nago</a>
             </td>
             <td class="type">
+              <span class="tag booking">rezerwacja</span>
               <span class="tag region">północ</span>
               <span class="tag">technika</span>
               <span class="tag">fabryka</span>
               <span class="tag">produkcja</span>
             </td>
             <td class="rating">4/5</td>
-            <td>Zwiedzanie browaru Orion w Nago: proces produkcji piwa, linia technologiczna, zbiorniki i degustacja. Warto wcześniej sprawdzić dostępność zwiedzania.</td>
+            <td>Zwiedzanie browaru Orion w Nago: proces produkcji piwa, linia technologiczna, zbiorniki i degustacja.</td>
           </tr>
 
           <tr>
@@ -718,13 +730,14 @@
             <td class="type">
               <span class="tag must">must-have</span>
               <span class="tag ferry">prom</span>
+              <span class="tag booking">rezerwacja</span>
               <span class="tag region">wyspy Kerama</span>
               <span class="tag">wyspa</span>
               <span class="tag">plaża</span>
               <span class="tag">snorkeling</span>
             </td>
             <td class="rating">5/5</td>
-            <td>Jedna z najładniejszych wysp Kerama, dobra na plaże, snorkeling i spokojny klimat.</td>
+            <td>Jedna z najładniejszych wysp Kerama, dobra na plaże, snorkeling i spokojny klimat; przy jednodniowym wypadzie warto wcześniej sprawdzić rozkład i bilety.</td>
           </tr>
 
           <tr>
@@ -735,13 +748,14 @@
             <td class="type">
               <span class="tag must">must-have</span>
               <span class="tag ferry">prom</span>
+              <span class="tag booking">rezerwacja</span>
               <span class="tag region">wyspy Kerama</span>
               <span class="tag">wyspa</span>
               <span class="tag">plaża</span>
               <span class="tag">snorkeling</span>
             </td>
             <td class="rating">5/5</td>
-            <td>Bardzo dobry kandydat na jednodniowy wypad promem z Naha.</td>
+            <td>Bardzo dobry kandydat na jednodniowy wypad promem z Naha; warto wcześniej sprawdzić rozkład i bilety.</td>
           </tr>
 
           <tr>
@@ -750,13 +764,14 @@
             </td>
             <td class="type">
               <span class="tag ferry">prom</span>
+              <span class="tag booking">rezerwacja</span>
               <span class="tag region">wyspy Kerama</span>
               <span class="tag">wyspa</span>
               <span class="tag">plaża</span>
               <span class="tag">snorkeling</span>
             </td>
             <td class="rating">4.5/5</td>
-            <td>Mniejsza i spokojniejsza wyspa Kerama z piękną wodą i snorkelingiem.</td>
+            <td>Mniejsza i spokojniejsza wyspa Kerama z piękną wodą i snorkelingiem; wymaga wcześniejszego sprawdzenia promu.</td>
           </tr>
 
           <tr>
@@ -765,13 +780,14 @@
             </td>
             <td class="type">
               <span class="tag ferry">prom</span>
+              <span class="tag booking">rezerwacja</span>
               <span class="tag region">północ / prom z Motobu</span>
               <span class="tag">wyspa</span>
               <span class="tag">plaża</span>
               <span class="tag">relaks</span>
             </td>
             <td class="rating">4.5/5</td>
-            <td>Mała wyspa przy północnej Okinawie, znana z czystej wody i plaż.</td>
+            <td>Mała wyspa przy północnej Okinawie, znana z czystej wody i plaż; logistycznie wymaga promu z okolic Motobu.</td>
           </tr>
 
           <tr>
@@ -780,13 +796,14 @@
             </td>
             <td class="type">
               <span class="tag ferry">prom</span>
+              <span class="tag booking">rezerwacja</span>
               <span class="tag region">północ / prom z Motobu</span>
               <span class="tag">wyspa</span>
               <span class="tag">drive</span>
               <span class="tag">widoki</span>
             </td>
             <td class="rating">4/5</td>
-            <td>Wyspa 30 minut promem z Motobu, dobra na spokojny objazd i widoki.</td>
+            <td>Wyspa 30 minut promem z Motobu, dobra na spokojny objazd i widoki; trzeba uwzględnić rozkład promu.</td>
           </tr>
 
           <tr>
@@ -795,6 +812,7 @@
             </td>
             <td class="type">
               <span class="tag ferry">prom / lot</span>
+              <span class="tag booking">rezerwacja</span>
               <span class="tag region">osobna wyspa</span>
               <span class="tag">wyspa</span>
               <span class="tag">plaża</span>
